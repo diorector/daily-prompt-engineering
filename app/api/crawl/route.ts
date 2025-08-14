@@ -2,11 +2,11 @@ import { NextRequest, NextResponse } from 'next/server'
 import { spawn } from 'child_process'
 import path from 'path'
 
-export async function POST(request: NextRequest) {
+export async function POST(request: NextRequest): Promise<NextResponse> {
   try {
     // 개발 환경: 테스트 데이터 생성 또는 실제 크롤링
     if (process.env.NODE_ENV !== 'production') {
-      return new Promise((resolve) => {
+      return new Promise<NextResponse>((resolve) => {
         const testCrawlerPath = path.join(process.cwd(), 'crawler', 'test_crawler.py')
         
         // Python 스크립트 실행
