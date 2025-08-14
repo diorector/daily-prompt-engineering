@@ -35,7 +35,7 @@ git push -u origin main
 3. 'New repository secret' 버튼 클릭
 4. 다음 정보 입력:
    - Name: `GEMINI_API_KEY`
-   - Secret: [Google AI Studio](https://aistudio.google.com/apikey)에서 발급받은 API 키
+   - Secret: `AIzaSyDm7RKtHRZtuENXAEXNeuwSO9U1lLVaKps`
 5. 'Add secret' 클릭
 
 ## 4. GitHub Actions 활성화

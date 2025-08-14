@@ -1,3 +1,5 @@
+import CrawlButton from './CrawlButton'
+
 export default function Header() {
   return (
     <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
@@ -10,6 +12,7 @@ export default function Header() {
             </span>
           </div>
           <div className="flex items-center space-x-4">
+            <CrawlButton />
             <button className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
               카테고리
             </button>

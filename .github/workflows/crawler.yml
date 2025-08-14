@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '0 0,12 * * *'  # 매일 00:00, 12:00 UTC (한국시간 09:00, 21:00)
   workflow_dispatch:  # 수동 실행 가능
+  repository_dispatch:  # API를 통한 트리거 가능
+    types: [crawl]
 
 jobs:
   crawl:
